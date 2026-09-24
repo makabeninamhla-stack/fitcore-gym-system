@@ -1,0 +1,6 @@
+@FitCoreGymAPI_HostAddress = http://localhost:5225
+
+GET {{FitCoreGymAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

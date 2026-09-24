@@ -1,0 +1,134 @@
+:root {
+  --gym-navy: #14243a;
+  --gym-blue: #1769e0;
+  --gym-background: #f3f6fb;
+  --gym-border: #dce4ef;
+}
+
+body {
+  min-width: 320px;
+  background: var(--gym-background);
+  color: var(--gym-navy);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Keep the app readable on wide screens. */
+.container {
+  max-width: 1100px;
+}
+
+/* Page heading */
+h1 {
+  color: var(--gym-navy);
+  font-weight: 750;
+  letter-spacing: -0.03em;
+}
+
+h5 {
+  color: var(--gym-navy);
+  font-weight: 650;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Dashboard sections */
+.card {
+  border: 1px solid var(--gym-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(20, 36, 58, 0.06);
+}
+
+.card-body {
+  padding: clamp(1.2rem, 3vw, 2rem);
+}
+
+.card-title {
+  color: var(--gym-navy);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+/* Inputs */
+.form-label {
+  color: #34445a;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.form-control,
+.form-select {
+  min-height: 42px;
+  border-color: var(--gym-border);
+  border-radius: 9px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--gym-blue);
+  box-shadow: 0 0 0 0.2rem rgba(23, 105, 224, 0.14);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 9px;
+  font-weight: 600;
+  padding: 0.55rem 1rem;
+}
+
+.btn-sm {
+  padding: 0.3rem 0.7rem;
+}
+
+.btn-primary {
+  background-color: var(--gym-blue);
+  border-color: var(--gym-blue);
+}
+
+.btn-primary:hover {
+  background-color: #1057be;
+  border-color: #1057be;
+}
+
+/* Tables */
+.table-responsive {
+  border: 1px solid var(--gym-border);
+  border-radius: 10px;
+}
+
+.table {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.table thead th {
+  background: #eaf1fb;
+  color: var(--gym-navy);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.table td,
+.table th {
+  padding: 0.8rem;
+}
+
+/* Messages */
+.alert {
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1.1rem;
+  }
+
+  .table td,
+  .table th {
+    padding: 0.6rem;
+  
+  }
+}
