@@ -7,3 +7,5 @@
 **/.env.*
 **/appsettings.Development.json
 **/*.csproj.user
+.vscode/
+**/build/
